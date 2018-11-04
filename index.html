@@ -57,6 +57,11 @@
         <div class="photo-overlay">
           <h3>Artist Page</h3>
           <p class="project-info">Continuous scroll artist page featuring my work as a film composer.</p>
+          <div class="skills">
+            <div class="skill"><p>HTML</p></div>
+            <div class="skill"><p>CSS</p></div>
+            <div class="skill"><p>JavaScript</p></div>
+          </div>
           <button class="button">VIEW PROJECT</button>
         </div>
       </div>
@@ -67,7 +72,12 @@
         <img src=images/dashboard.png>
         <div class="photo-overlay">
           <h3>User Dashboard</h3>
-          <p>An interactive and intuitive dashboard for a web application.</p>
+          <p>An interactive and intuitive user dashboard for a web application.</p>
+          <div class="skills">
+            <div class="skill"><p>HTML</p></div>
+            <div class="skill"><p>CSS</p></div>
+            <div class="skill"><p>JavaScript</p></div>
+          </div>
           <button class="button">VIEW PROJECT</button>
         </div>
       </div>
@@ -78,7 +88,12 @@
         <img src=images/saasaans.png>
         <div class="photo-overlay">
           <h3>Small Business Page</h3>
-          <p>A Wordpress site for a small Danish Modern shope in Los Angeles.</p>
+          <p>A Wordpress site for a small Danish Modern shop in Los Angeles.</p>
+          <div class="skills">
+            <div class="skill"><p>HTML</p></div>
+            <div class="skill"><p>CSS</p></div>
+            <div class="skill"><p>JavaScript</p></div>
+          </div>
           <button class="button">View Project</button>
         </div>
       </div>
@@ -90,6 +105,11 @@
         <div class="photo-overlay">
           <h3>Web Style Guide</h3>
           <p>For this project, I used Sass to create a style guide to make workflow easier, faster, and more efficient.</p>
+          <div class="skills">
+            <div class="skill"><p>HTML</p></div>
+            <div class="skill"><p>CSS</p></div>
+            <div class="skill"><p>JavaScript</p></div>
+          </div>
           <button class="button">View Project</button>
         </div>
       </div>
@@ -101,6 +121,11 @@
         <div class="photo-overlay">
           <h3>Employee Directory</h3>
           <p>A searchable employee directory which uses the Fetch API to receive user data from a server.</p>
+          <div class="skills">
+            <div class="skill"><p>HTML</p></div>
+            <div class="skill"><p>CSS</p></div>
+            <div class="skill"><p>JavaScript</p></div>
+          </div>
           <button class="button">View Project</button>
         </div>
       </div>
@@ -111,7 +136,12 @@
         <img src=images/word_game.png>
         <div class="photo-overlay">
           <h3>Game Show App</h3>
-          <p>A 'Wheel of Fortune' inspired game. Players try to guess a phrase by entering different letters.</p>
+          <p>A 'Wheel of Fortune' inspired game! Players try to guess a phrase by entering different letters.</p>
+          <div class="skills">
+            <div class="skill"><p>HTML</p></div>
+            <div class="skill"><p>CSS</p></div>
+            <div class="skill"><p>JavaScript</p></div>
+          </div>
           <button class="button">View Project</button>
         </div>
       </div>
@@ -149,14 +179,15 @@
 
     <div class="contact" id="contact">
       <a name="#contact"></a>
-      <h1 class="section-title">Contact</h1>
-      <form id="messageUser" action="index.html" method="post">
-        <input required class="field" type="text" id="userName" name="user_name" placeholder="email">
+      <h1 class="section-title">CONTACT</h1>
+      <form id="messageUser" action="https://formspree.io/michaelchambersmusic@gmail.com" method="POST">
+        <input required class="field" type="text" name="name" placeholder="name">
+        <input required class="field" type="email" name="_replyto" placeholder="email">
         <ul id='autofill'>
-
         </ul>
         <textarea required id="messageForUser" name="user_message" maxlength="280" placeholder="Message"></textarea>
-        <button id="sendMessage" type="submit">SEND</button>
+        <input id='send' type="submit" value="Send">
+        <!-- <button id="sendMessage" type="submit">SEND</button> -->
       </form>
     </div>
 
