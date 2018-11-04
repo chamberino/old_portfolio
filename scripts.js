@@ -3,7 +3,7 @@ const modalSRC = document.querySelector('IFRAME');
 let selectedUser = 0;
 
 
-//===   START PARALLAX SCROLLING FUNCTIONALITY   //
+// ===   START PARALLAX SCROLLING FUNCTIONALITY   //
 
 // helper function
 function $$(selector, context) {
@@ -14,9 +14,9 @@ function $$(selector, context) {
 
 window.addEventListener("scroll", function() {
    var scrolledHeight= window.pageYOffset;
-  $$(".parallax").forEach(function(el,index,array) {
+  $$(".title").forEach(function(el,index,array) {
     var limit= el.offsetTop+ el.offsetHeight;
-    el.style.backgroundPositionY=  (scrolledHeight - el.offsetTop) /3.5+ "px";
+    el.style.paddingTop =  (scrolledHeight - el.offsetTop) /1.5+ "px";
 
      });
 });
@@ -26,30 +26,31 @@ window.addEventListener("scroll", function() {
 
 //===   START PHOTO OVERLAY FUNCTIONS   //
 
-// const grid = document.querySelector('.grid');
+const grid = document.querySelector('.container');
 const modal = document.querySelector('.modal');
-// grid.addEventListener('click', (e) => {
-//   // if (e.target.className === 'photo') {
-//   modal.classList.add('show-modal');
-//   console.log(e.target);
-//   document.querySelector('.modal-content').innerHTML =
-  // `
-  //   <iframe>
-  //       title=""
-  //       width="95%"
-  //       height="90%"
-  //       src="../${portfolioSites[e.target.id]}">
-  //   </iframe>
-  // `
-// // add dynamic html here
-//
-// });
+grid.addEventListener('click', (e) => {
+  if (e.target.className === 'photo') {
+  modal.classList.add('show-modal');
+  console.log(e.target);
+  document.querySelector('.modal-content').innerHTML =
+  `
+    <iframe>
+        title=""
+        width="95%"
+        height="90%"
+        src="../${portfolioSites[e.target.id]}">
+    </iframe>
+  `
+// add dynamic html here
+}
+});
 
 
-let container = document.querySelectorAll('.grid-item');
 
-for (let i=0; i<container.length; i++) {
-  container[i].addEventListener('click', () => {
+
+const button = document.querySelectorAll('.button');
+for (let i=0; i<button.length; i++) {
+  button[i].addEventListener('click', () => {
     if (modal.className=='modal') {
       selectedUser = i;
       modal.classList.toggle('show-modal');
@@ -79,4 +80,25 @@ modal.addEventListener('click', event => {
 })
 
 
-//===   END PHOTO OVERLAY FUNCTIONS   //
+//===   END PHOTO OVERLAY FUNCTIONS   ===//
+
+
+//===   MOBILE NAV BAR   ===//
+
+const menuButton = document.querySelector('.mobile-btn');
+const navMenu = document.querySelector('.nav')
+const siteWrapper = document.querySelector('.wrapper');
+
+menuButton.addEventListener('click', (e) => {
+  console.log('working')
+  navMenu.classList.add('nav-mobile');
+  siteWrapper.classList.add('move-page');
+
+  navMenu.classList.toggle('nav-close');
+  siteWrapper.classList.toggle('close-page');
+})
+
+navMenu.addEventListener('click', () => {
+    navMenu.classList.toggle('nav-close');
+    siteWrapper.classList.toggle('close-page');
+  });
