@@ -3,6 +3,11 @@ const modalSRC = document.querySelector('IFRAME');
 let selectedUser = 0;
 
 
+
+// ===   Enable Touch Events for Mobile   //
+
+document.addEventListener("touchstart", function(){}, true);
+
 // ===   START PARALLAX SCROLLING FUNCTIONALITY   //
 
 // helper function
