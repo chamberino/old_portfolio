@@ -29,7 +29,7 @@ window.addEventListener("scroll", function() {
 //===   END PARALLAX SCROLLING FUNCTIONALITY   ===//
 
 
-//===   START PHOTO OVERLAY FUNCTIONS   //
+//===   START MODAL OVERLAY FUNCTIONS   //
 
 const grid = document.querySelector('.container');
 const modal = document.querySelector('.modal');
@@ -46,11 +46,8 @@ grid.addEventListener('click', (e) => {
         src="../${portfolioSites[e.target.id]}">
     </iframe>
   `
-// add dynamic html here
 }
 });
-
-
 
 
 const button = document.querySelectorAll('.button');
@@ -63,9 +60,6 @@ for (let i=0; i<button.length; i++) {
     }
   });
 }
-
-
-
 
 modal.addEventListener('click', event => {
   if (event.target.className === 'close-modal' || event.target.className === 'modal show-modal') {
@@ -85,7 +79,7 @@ modal.addEventListener('click', event => {
 })
 
 
-//===   END PHOTO OVERLAY FUNCTIONS   ===//
+//===   END MODAL OVERLAY FUNCTIONS   ===//
 
 
 //===   MOBILE NAV BAR   ===//

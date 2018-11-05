@@ -32,7 +32,6 @@ button {
   color: #FFF;
   display: block;
   padding: .75em;
-  /* margin: 0 auto; */
   background-color: #EFBA4E;
   font-size: 12px;
   text-align: center;
@@ -55,20 +54,20 @@ button:hover {
 }
 
 .button {
-  /* margin-top: auto; */
-  /* margin-bottom: 10%; */
+  position: relative;
   height: 50px;
   width: 60%;
   align-self: center;
+  z-index: 1000;
 }
 
 iframe {
   border: 0;
+  -webkit-overflow-scrolling: touch;
+  overflow: auto
 }
 
 .wrapper {
-  /* margin: 0 1em; */
-  /* margin-bottom: 2em; */
   background-color: #fff;
 }
 
@@ -85,12 +84,10 @@ iframe {
   letter-spacing: 10px;
   font-size: 18px;
   font-weight:400;
-  padding-top: 2.5em;
-  /* background-color: #C9D3DE; */
+  padding-top: 3.5em;
 }
 
 .site-title2 {
-  /* background-color: #C9D3DE; */
   opacity: .95;
   border-radius: 5px;
   margin: .25em auto;
@@ -109,9 +106,8 @@ h1.site-title {
   font-weight:400;
   font-style: normal;
   text-align: center;
-  /* background-color: #EFBA4E; */
   background-color: steelblue;
-  height: 50vh;
+  height: 60vh;
   opacity: .9;
 }
 
@@ -128,7 +124,7 @@ h1.site-title {
 
 .avatar {
   position: relative;
-  top: 50px;
+  top: 70px;
   height: 150px;
   width: 150px;
   display: block;
@@ -149,7 +145,7 @@ h1.site-title {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 39% 50%;
-  height: 50vh;
+  height: 60vh;
   width: 100%;
 }
 
@@ -164,7 +160,6 @@ h1.site-title {
   width: 94.02985075%;
   margin: 0 auto;
   padding: 1em 0;
-  /* z-index: 1000; */
 }
 
 #about {
@@ -172,7 +167,6 @@ h1.site-title {
 }
 
 .contact {
-  /* margin: 0 1em; */
   background-color: #dbdbdb;
   padding: 2em;
 }
@@ -194,8 +188,8 @@ h1.site-title {
 	position: relative;
 	line-height: 1;
 	overflow: hidden;
-  filter: drop-shadow(0px 0px 1px rgba(0,0,0,.2))
-  drop-shadow(0px 0px 10px rgba(0,0,0,.2));
+  filter: drop-shadow(0px 0px 1px rgba(0,0,0,.2));
+  filter: drop-shadow(0px 0px 10px rgba(0,0,0,.2));
   border-radius: 2px;
 }
 .photo-container img {
@@ -260,11 +254,6 @@ h1.site-title {
   align-items: center;
 }
 
-.contact {
-  /* margin: 2em 1em; */
-  /* padding: 4em auto; */
-}
-
 .flex-item img {
   display: block;
   object-fit: cover;
@@ -298,11 +287,6 @@ h1.site-title {
 	transform: rotate(-5deg) scale(1.1);
 }
 
-
-#avatar{
-	/* transform-origin: 0 0; */
-}
-
 /* -- Photo Overlay Transitions --------- */
 
 .slide .photo-overlay,
@@ -316,7 +300,6 @@ h1.site-title {
 
 .slide:hover .photo-overlay {
 	transform: translateX(0);
-  /* opacity: 1; */
 }
 
 .slide:hover img {
@@ -329,11 +312,12 @@ h1.site-title {
       left: 0;
       top: 0;
       width: 100%;
-      height: 100%;
+      height: 95vh;
       background-color: rgba(0, 0, 0, 0.5);
       opacity: 0;
       visibility: hidden;
       transform: scale(1.1);
+      z-index: 10000;
       transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
   }
 
@@ -341,10 +325,10 @@ h1.site-title {
       position: absolute;
       top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%);
+      transform: translate(-50%, -48%);
       background-color: white;
       width: 95%;
-      height: 95%;
+      height: 95vh;
       border-radius: 0.5rem;
       text-align: center;
       display: flex;
@@ -363,6 +347,8 @@ h1.site-title {
   .close-modal {
     cursor: pointer;
     align-self: flex-end;
+    margin-top: .25em;
+    margin-bottom: .5em;
     margin-right: 1em;
     font-size: 34px;
     line-height: 0;
@@ -420,6 +406,13 @@ h1.site-title {
     button {
       font-size: 18px;
     }
+
+    .close-modal {
+      margin-bottom: 1.5em;
+      margin-right: 1em;
+      font-size: 34px;
+    }
+
   }
 
 
@@ -431,10 +424,6 @@ h1.site-title {
 
     #about {
       padding-right: 4em;
-    }
-
-    .contact {
-      /* padding: 2em 3em */
     }
 
     .flex-item img {
@@ -460,13 +449,11 @@ header {
 }
 
 .mobile-btn {
-  /* z-index: 100000; */
   color: black;
   padding-right: .5em;
 }
 
 .nav {
-  /* display: none; */
   position: fixed;
   display: flex;
   flex-direction: column;
@@ -481,7 +468,6 @@ header {
   transition: transform .5s;
   width: 200px;
   height: 100vh;
-  /* justify-content: space-around; */
 }
 
 .nav-mobile {
