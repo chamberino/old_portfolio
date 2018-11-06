@@ -89,10 +89,9 @@ const navMenu = document.querySelector('.nav')
 const siteWrapper = document.querySelector('.wrapper');
 
 menuButton.addEventListener('click', (e) => {
-  console.log('working')
   navMenu.classList.add('nav-mobile');
   siteWrapper.classList.add('move-page');
-
+  
   navMenu.classList.toggle('nav-close');
   siteWrapper.classList.toggle('close-page');
 })

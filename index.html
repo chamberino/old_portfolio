@@ -10,8 +10,6 @@
 </head>
 
 <body>
-
-
   <header>
     <span class="mobile-btn">☰</span>
     <nav>
@@ -25,7 +23,6 @@
   </header>
 
   <div class="wrapper move-page close-page">
-
     <div class="parallax">
       <div class="title">
         <div class="avatar"></div>
@@ -41,17 +38,28 @@
           </div>
         </div>
       </div>
-
-
   </div>
-
-
 
   <div class="container" id="portfolio">
 
     <div class="photo-container">
       <div id="0" class="photo slide">
-        <img src=images/michael_chambers.png alt"Michael Chambers Artist Page">
+        <img src=images/dashboard.png alt="WebApp Dashboard">
+        <div class="photo-overlay">
+          <h3>User Dashboard</h3>
+          <p>An interactive and intuitive user dashboard for a web application.</p>
+          <div class="skills">
+            <div class="skill"><p>HTML</p></div>
+            <div class="skill"><p>Responsive Design</p></div>
+            <div class="skill"><p>Chart.js</p></div>
+          </div>
+          <button class="button">View Project</button>
+        </div>
+      </div>
+    </div>
+    <div class="photo-container">
+      <div id="1" class="photo slide">
+        <img src=images/michael_chambers.png alt="Michael Chambers Artist Page">
         <div class="photo-overlay">
           <h3>Artist Page</h3>
           <p class="project-info">Continuous scroll artist page featuring my work as a film composer.</p>
@@ -60,35 +68,18 @@
             <div class="skill"><p>CSS</p></div>
             <div class="skill"><p>JavaScript</p></div>
           </div>
-          <button class="button">VIEW PROJECT</button>
+          <button class="button">View Project</button>
         </div>
       </div>
     </div>
-
-    <div class="photo-container">
-      <div id="1" class="photo slide">
-        <img src=images/dashboard.png>
-        <div class="photo-overlay">
-          <h3>User Dashboard</h3>
-          <p>An interactive and intuitive user dashboard for a web application.</p>
-          <div class="skills">
-            <div class="skill"><p>HTML</p></div>
-            <div class="skill"><p>CSS</p></div>
-            <div class="skill"><p>JavaScript</p></div>
-          </div>
-          <button class="button">VIEW PROJECT</button>
-        </div>
-      </div>
-    </div>
-
     <div class="photo-container">
       <div id="2" class="photo slide">
-        <img src=images/saasaans.png>
+        <img src=images/saasaans.png alt="Saasaan's Danish Modern">
         <div class="photo-overlay">
           <h3>Small Business Page</h3>
           <p>A Wordpress site for a small Danish Modern shop in Los Angeles.</p>
           <div class="skills">
-            <div class="skill"><p>HTML</p></div>
+            <div class="skill"><p>Wordpress</p></div>
             <div class="skill"><p>CSS</p></div>
             <div class="skill"><p>JavaScript</p></div>
           </div>
@@ -96,42 +87,39 @@
         </div>
       </div>
     </div>
-
     <div class="photo-container">
       <div id="3" class="photo slide">
-        <img src=images/styleguide.png>
+        <img src=images/styleguide.png alt="Web Style Guide">
         <div class="photo-overlay">
           <h3>Web Style Guide</h3>
           <p>For this project, I used Sass to create a style guide to make workflow easier, faster, and more efficient.</p>
           <div class="skills">
-            <div class="skill"><p>HTML</p></div>
+            <div class="skill"><p>Sass</p></div>
+            <div class="skill"><p>Responsive Design</p></div>
             <div class="skill"><p>CSS</p></div>
-            <div class="skill"><p>JavaScript</p></div>
           </div>
           <button class="button">View Project</button>
         </div>
       </div>
     </div>
-
     <div class="photo-container">
       <div id="4" class="photo slide">
-        <img src=images/employee_directory.png>
+        <img src=images/employee_directory.png alt="Employee Directory">
         <div class="photo-overlay">
           <h3>Employee Directory</h3>
           <p>A searchable employee directory which uses the Fetch API to receive user data from a server.</p>
           <div class="skills">
+            <div class="skill"><p>Fetch API</p></div>
+            <div class="skill"><p>OOP JS</p></div>
             <div class="skill"><p>HTML</p></div>
-            <div class="skill"><p>CSS</p></div>
-            <div class="skill"><p>JavaScript</p></div>
           </div>
           <button class="button">View Project</button>
         </div>
       </div>
     </div>
-
     <div class="photo-container">
       <div id="5" class="photo slide">
-        <img src=images/word_game.png>
+        <img src=images/word_game.png alt="Word Game">
         <div class="photo-overlay">
           <h3>Game Show App</h3>
           <p>A 'Wheel of Fortune' inspired game! Players try to guess a phrase by entering different letters.</p>
@@ -147,23 +135,9 @@
 
   </div>
 
-  <!-- <div class="modal">
-    <div class="modal-content">
-      <h2 class ="close-modal">&times;</h2>
-      <iframe src="https://www.michaelchambersmusic.com" width="95%" height="95%">
-      </iframe>
-      <div class="arrows">
-        <p class='left-arrow'>&#9664;</p>
-        <p class='right-arrow'>&#9654;</p>
-      </div>
-    </div>
-  </div> -->
-
-
     <div class="about-container">
-      <a name="#about"></a>
       <div class="flex-item">
-        <img src="images/Chambers_Union.JPG">
+        <img src="images/Chambers_Union.JPG" alt="Michael Chambers Headshot">
       </div>
       <div id="about" class="flex-item">
         <h1 class="contact-title">ABOUT</h1>
@@ -172,8 +146,8 @@
     </div>
 
     <div class="contact" id="contact">
-      <a name="#contact"></a>
       <h1 class="section-title">CONTACT</h1>
+      <p>I am available for hire. Send me a message with details of your project and let's collaborate!</p>
       <form id="messageUser" action="https://formspree.io/michaelchambersmusic@gmail.com" method="POST">
         <input required class="field" type="text" name="name" placeholder="name">
         <input required class="field" type="email" name="_replyto" placeholder="email">
@@ -181,16 +155,15 @@
         </ul>
         <textarea required id="messageForUser" name="user_message" maxlength="280" placeholder="Message"></textarea>
         <input id='send' type="submit" value="Send">
-        <!-- <button id="sendMessage" type="submit">SEND</button> -->
       </form>
+      <footer><p>© 2018 MDC</p></footer>
     </div>
-
   </div>
 
   <div class="modal">
     <div class="modal-content">
       <h2 class ="close-modal">&times;</h2>
-      <iframe src="https://www.michaelchambersmusic.com" width="95%" height="95%">
+      <iframe src="https://www.michaelchambersmusic.com" width="95%" height="93%">
       </iframe>
       <div class="arrows">
         <p class='left-arrow'>&#9664;</p>
