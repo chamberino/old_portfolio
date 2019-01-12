@@ -1,4 +1,4 @@
-const portfolioSites = ['https://www.michaelchambersmusic.com','https://chamberino.github.io/project_7_web_app_dashboard','https://saasaans.com/','https://chamberino.github.io/Project_4_Web_Style_Guide','https://chamberino.github.io/project_8_employee_directory','https://chamberino.github.io/project_6_game_show_app',]
+const portfolioSites = ['https://chamberino.github.io/project_7_web_app_dashboard', 'https://www.michaelchambersmusic.com','https://saasaans.com/','https://chamberino.github.io/Project_4_Web_Style_Guide','https://chamberino.github.io/project_8_employee_directory','https://chamberino.github.io/project_6_game_show_app',]
 const modalSRC = document.querySelector('IFRAME');
 let selectedUser = 0;
 
@@ -91,7 +91,7 @@ const siteWrapper = document.querySelector('.wrapper');
 menuButton.addEventListener('click', (e) => {
   navMenu.classList.add('nav-mobile');
   siteWrapper.classList.add('move-page');
-  
+
   navMenu.classList.toggle('nav-close');
   siteWrapper.classList.toggle('close-page');
 })
