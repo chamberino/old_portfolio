@@ -1,4 +1,4 @@
-const portfolioSites = ['https://chamberino.github.io/project_7_web_app_dashboard', 'https://chamberino.github.io/project_3_interactive_form/','https://saasaans.com/','https://chamberino.github.io/Project_4_Web_Style_Guide','https://chamberino.github.io/project_8_employee_directory','https://chamberino.github.io/project_6_game_show_app',]
+const portfolioSites = ['https://chamberino.github.io/project_7_web_app_dashboard', 'https://chamberino.github.io/project_3_interactive_form/','https://chamberino.github.io/project_2_list_pagination_and_filtering/','https://chamberino.github.io/Project_4_Web_Style_Guide','https://chamberino.github.io/project_8_employee_directory','https://chamberino.github.io/project_6_game_show_app',]
 const modalSRC = document.querySelector('IFRAME');
 let selectedUser = 0;
 
